@@ -1,0 +1,111 @@
+/* Container for centering the login form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  background-color: #f4f7fc; /* Light background color */
+}
+
+/* Styling for the login form */
+.login {
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background for the form */
+  width: 100%;
+  max-width: 400px; /* Max width for the form */
+}
+
+/* Input group container */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input box styling */
+.input-group input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  width: 90%; /* Reduced width for the input fields */
+  margin: 0 auto; /* Center the input fields */
+}
+
+/* Focus state for input boxes */
+.input-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #e9f4ff;
+}
+
+/* Buttons container for login and signup buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Button styling */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+}
+
+/* Button hover state */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Button focus state */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error message styling (if needed) */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+  .login {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
